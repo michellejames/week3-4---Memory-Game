@@ -1,0 +1,104 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* 1. Main Layout ================================= */
+* {
+  box-sizing: border-box; }
+
+body {
+    background-color: green;
+}
+
+.card {
+    width: 140px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: red;
+    border: 15px solid white;
+    color: transparent;
+    font-size: 50pt;
+    font-family: helvetica;
+    float: left;
+    margin: 10px;
+}
+
+.card.flipped,
+.card.matched {
+    background-color: white;
+    color: black;
+}
+
+.card.matched {
+    opacity: 0.5;
+}
+
+.card.flipped[data-color="red"] {
+    color: red;
+}
+
+h1 {
+    position: absolute;
+    top: 83%;
+    left: 82%;
+    font-size: 2em;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.module {
+    width: 40%;
+    height: 60%;
+    background: white;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.winningMessage {
+    color: black;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+
+.restartButton {
+    opacity: 1;
+    top: 70%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.endButton {
+    opacity: 1;
+    top: 70%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
