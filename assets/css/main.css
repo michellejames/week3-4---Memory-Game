@@ -13,10 +13,12 @@ TABLE OF CONTENTS:
 */
 /* 1. Main Layout ================================= */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
     background-color: green;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .card {
@@ -27,7 +29,7 @@ body {
     background-color: red;
     border: 15px solid white;
     color: transparent;
-    font-size: 50pt;
+    font-size: 43pt;
     font-family: helvetica;
     float: left;
     margin: 10px;
@@ -50,7 +52,7 @@ body {
 h1 {
     position: absolute;
     top: 83%;
-    left: 82%;
+    left: 46%;
     font-size: 2em;
 }
 
@@ -78,6 +80,7 @@ h1 {
 
 .winningMessage {
     color: black;
+    font-size: 25px;
     opacity: 1;
     top: 50%;
     left: 50%;
@@ -87,18 +90,32 @@ h1 {
 }
 
 .restartButton {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    border: 2px solid green;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
     opacity: 1;
     top: 70%;
-    left: 42%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    left: 20%;
+/*    transform: translate(-50%, -50%);
+*/    position: absolute;
 }
 
 .endButton {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    border: 2px solid green;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
     opacity: 1;
     top: 70%;
-    left: 58%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    left: 60%;
+/*    transform: translate(-50%, -50%);
+*/    position: absolute;
 }
 

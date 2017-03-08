@@ -266,7 +266,7 @@ var createModule = function () {
 	var winningMessage = document.createElement ( "h3" );
 	winningMessage.classList.add( "winningMessage" );
 	module.appendChild ( winningMessage );
-	winningMessage.innerHTML = "Congratulations! It took you " + ( hoursValue () + hours + ":" + minutesValue () + minutes + ":" + secondsValue () + seconds ) + " to finish the game.";
+	winningMessage.innerHTML = "Congratulations!<br><br>It took you " + ( hoursValue () + hours + ":" + minutesValue () + minutes + ":" + secondsValue () + seconds ) + " to finish the game.";
 
 	var restartButton = document.createElement ( "button" );
 	restartButton.classList.add( "restartButton" );
@@ -311,7 +311,7 @@ var restartGame = function () {
 	for ( var i = cards.length - 1; i >= 0; i-- ) {
 		cards[i].parentNode.removeChild ( cards [i] );
 	}
-	IntervalstopWatch = setInterval(addTime, 1000);
+	intervalStopWatch = setInterval(addTime, 1000);
 	startGame ();
 
 }
